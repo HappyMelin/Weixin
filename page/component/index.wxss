@@ -1,3 +1,4 @@
+
 .index{
     background-color: #ffffff;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
@@ -9,8 +10,6 @@
     padding: 40px;
 }
 .body{
-    padding-left: 15px;
-    padding-right: 15px;
     overflow: hidden;
 }
 .title{
@@ -95,3 +94,31 @@
     height: 1rpx;
     background-color: #DFDFDF;
 }
+.topNav{
+    width: 100%;
+}
+.topNav navigator{
+    float:left;
+    width:25%;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    color:#22a5ad;
+    font-size:14px;
+    background-color:#ffffff;
+    overflow: hidden;
+    }
+    .swiper-item{
+    display: block;
+}
+.swiper image{width:100%;}
+.audioBox{position:relative;border-top:1px solid #eeeeee;border-bottom:1px solid #eeeeee;}
+.audioBox audio{display:none;}
+.audio-img{width:50px;height:50px;}
+.audio-name{padding-left:10px;}
+.audio-btn{ 
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 100px;
+    height: 50px;}

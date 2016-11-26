@@ -1,10 +1,66 @@
 <view class="index">
-    <view class="head">
-        <view class="title">小程序组件demo</view>
-        <view class="desc">这是展示小程序组件。</view>
+    <view class="topNav">
+    <navigator url="navigate?title=navigate" class="navigator-hover">歌单</navigator>
+    <navigator url="redirect?title=redirect"  class="o">精选</navigator>
+    <navigator url="navigate?title=navigate" class="">排行</navigator>
+    <navigator url="redirect?title=redirect"  class="o">发现</navigator>    
     </view>
-
+    <view class="page__bd">
+        <view class="section  swiper">
+            <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                <image src="{{item}}" class=" slide-image" />
+                </swiper-item>
+            </block>
+            </swiper>
+        </view>
+    <view>
     <view class="body">
+        <view class="widgets">
+            <view class="widgets__item">
+                <view class="audioBox">
+                <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <image class="audio-img" src="../../../image/disc2-2.png" background-size="cover" />                   
+                    <text class="audio-name">女儿红</text>
+                    <view class="audio-btn">
+                    <image class="audio-img" src="../../../image/play.png" background-size="cover" />                   
+                    <image class="audio-img" src="../../../image/pause.png" background-size="cover" />                   
+                    </view>
+                </view>
+                <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+                </view>
+            </view>
+            <view class="widgets__item">
+                <view class="audioBox">
+                <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <image class="audio-img" src="../../../image/disc2-2.png" background-size="cover" />                   
+                    <text class="audio-name">女儿红</text>
+                    <view class="audio-btn">
+                    <image class="audio-img" src="../../../image/play.png" background-size="cover" />                   
+                    <image class="audio-img" src="../../../image/pause.png" background-size="cover" />                   
+                    </view>
+                </view>
+                <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+                </view>
+            </view>
+            <view class="widgets__item">
+                <view class="audioBox">
+                <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <image class="audio-img" src="../../../image/disc2-2.png" background-size="cover" />                   
+                    <text class="audio-name">女儿红</text>
+                    <view class="audio-btn">
+                    <image class="audio-img" src="../../../image/play.png" background-size="cover" />                   
+                    <image class="audio-img" src="../../../image/pause.png" background-size="cover" />                   
+                    </view>
+                </view>
+                <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--<view class="body">
         <view class="widgets">
             <view class="widgets__item">
                 <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
@@ -167,5 +223,5 @@
                 </view>
             </view>
         </view>
-    </view>
+    </view>-->
 </view>

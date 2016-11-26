@@ -75,8 +75,8 @@
   "tabBar": {
     "color": "#dddddd",
     "selectedColor": "#22a5ad",
-    "borderStyle": "#ffffff",
-    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
     "list": [{
       "pagePath": "page/component/index",
       "iconPath": "image/headphones1.png",
